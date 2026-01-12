@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureVote - Digital Governance Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <a href="index.html" class="logo">
+            <span class="g-text">Q</span><span class="p-text">uantum</span><span class="a-text">V</span><span class="y-text">ote</span>
+        </a>
+        <nav class="nav-links">
+            <li><a href="index.html"><i class="fas fa-building"></i> Home</a></li>
+            <li><a href="admin.html"><i class="fas fa-user-shield"></i> Administration</a></li>
+            <li><a href="voter.html" id="voter-nav-link" style="display: none;"><i class="fas fa-users"></i> Voter Portal</a></li>
+        </nav>
+        <div class="user-profile">
+            <i class="fas fa-user-circle"></i>
+            <span id="header-account-address">Not Connected</span>
+        </div>
+    </header>
+
+    <div class="hero-section">
+        <div class="slide-content">
+            <p class="slide-subtitle">THE TRUSTED NAME IN POLITICS CAREER</p>
+            <h1 class="slide-title">TOGETHER WE'LL MAKE INDIA GOOD AGAIN</h1>
+            </div>
+    </div>
+    <div class="section status-actions-section">
+        <div class="section-content">
+            <div id="metamask-status" class="card">
+                <i class="fab fa-ethereum"></i>
+                <p>Wallet Status: <span id="status-text">Disconnected</span></p>
+                <span id="account-address"></span>
+            </div>
+            <button id="connect-metamask-btn" class="main-button"><i class="fas fa-wallet"></i> Connect Wallet</button>
+            
+            <button id="go-to-voter-dashboard-btn" style="display: none;" class="main-button"><i class="fas fa-chart-line"></i> Go to Voter Portal</button>
+            <button id="go-to-admin-panel-btn" style="display: none;" class="main-button"><i class="fas fa-cogs"></i> Go to Admin Panel</button>
+        </div>
+    </div>
+
+    <div class="section feature-section">
+        <div class="section-content">
+            <h2>The Pillars of Digital Governance<span class="accent-dot">.</span></h2>
+            <p class="section-subtitle">Core Principles of SecureVote</p>
+            <div class="feature-grid">
+                <div class="feature-item card">
+                    <img src="imgs/feature_security.png" alt="Security Icon">
+                    <h3>Unwavering Security</h3>
+                    <p>Leveraging cryptographic protocols to safeguard every ballot from external threats and internal manipulation.</p>
+                </div>
+                <div class="feature-item card">
+                    <img src="imgs/feature_transparency.png" alt="Transparency Icon">
+                    <h3>Absolute Transparency</h3>
+                    <p>Every vote is recorded on an immutable public ledger, allowing for real-time verification and auditability by all.</p>
+                </div>
+                <div class="feature-item card">
+                    <img src="imgs/feature_integrity.png" alt="Integrity Icon">
+                    <h3>Data Integrity</h3>
+                    <p>Blockchain ensures that once a vote is cast, it cannot be altered or removed, preserving the true will of the people.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section campaign-section">
+        <div class="section-content">
+            <h2>Meet Our Project Team<span class="accent-dot">.</span></h2>
+            <p class="section-subtitle">Driving Innovation in SecureVote</p>
+            <div class="campaign-grid">
+                <div class="campaign-member card">
+                    <img src="imgs/campaign_member1.jpg" alt="Dr. Evelyn Reed">
+                    <h3>ALINSHA S</h3>
+                    
+                </div>
+                <div class="campaign-member card">
+                    <img src="imgs/campaign_member2.jpg" alt="Cmdr. Ben Carter">
+                    <h3>ALTHAF K A</h3>
+                </div>
+                <div class="campaign-member card">
+                    <img src="imgs/campaign_member2.jpg" alt="Aisha Khan, Esq.">
+                    <h3>CHRIS P</h3>
+                </div>
+                <div class="campaign-member card">
+                    <img src="imgs/campaign_member1.jpg" alt="Aisha Khan, Esq.">
+                    <h3>FAHAD A</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section join-section">
+        <div class="section-content">
+            <h2>Connect with the Future<span class="accent-dot">.</span></h2>
+            <p class="section-subtitle">Your Voice, Our Network.</p>
+            <div class="join-grid">
+                <div class="join-item card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Central Nexus</h3>
+                    <p>Unit 7, Digital Plaza, Metro City</p>
+                    <p>Contact: +01 234 5678</p>
+                    <p>Email: info@SecureVote.org</p>
+                </div>
+                <div class="join-item card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Support Hub</h3>
+                    <p>Level 3, Data Tower, Innovation Park</p>
+                    <p>Contact: +01 987 6543</p>
+                    <p>Email: support@SecureVote.org</p>
+                </div>
+                <div class="join-item card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Partnerships</h3>
+                    <p>Suite 10, Alliance Center, Tech District</p>
+                    <p>Contact: +01 112 2334</p>
+                    <p>Email: partners@SecureVote.org</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="logo-footer">
+                <a href="index.html" class="logo">
+                    <span class="g-text">Q</span><span class="p-text">uantum</span><span class="a-text">V</span><span class="y-text">ote</span>
+                </a>
+            </div>
+            <p>&copy; 2025 SecureVote. All rights reserved. | Digital Sovereignty Secured.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.7.0/dist/web3.min.js"></script>
+    <script src="js/web3_init.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const voterNavLink = document.getElementById('voter-nav-link');
+            const headerAccountAddress = document.getElementById('header-account-address');
+            const goToVoterDashboardBtn = document.getElementById('go-to-voter-dashboard-btn');
+            const goToAdminPanelBtn = document.getElementById('go-to-admin-panel-btn');
+            const connectMetaMaskBtn = document.getElementById('connect-metamask-btn');
+
+            const updateNavVisibility = () => {
+                if (goToVoterDashboardBtn && goToVoterDashboardBtn.style.display === 'block') {
+                    voterNavLink.style.display = 'block';
+                } else {
+                    voterNavLink.style.display = 'none';
+                }
+                
+                if (accounts && accounts.length > 0) {
+                    headerAccountAddress.textContent = accounts[0].substring(0, 8) + '...';
+                } else if (window.ethereum && window.ethereum.selectedAddress) {
+                    headerAccountAddress.textContent = window.ethereum.selectedAddress.substring(0, 8) + '...';
+                } else {
+                    headerAccountAddress.textContent = 'Not Connected';
+                }
+            };
+
+            const observer = new MutationObserver(updateNavVisibility);
+            if (goToVoterDashboardBtn) observer.observe(goToVoterDashboardBtn, { attributes: true, attributeFilter: ['style'] });
+            if (goToAdminPanelBtn) observer.observe(goToAdminPanelBtn, { attributes: true, attributeFilter: ['style'] });
+            if (connectMetaMaskBtn) observer.observe(connectMetaMaskBtn, { attributes: true, attributeFilter: ['style'] });
+
+            window.addEventListener('web3_initialized', updateNavVisibility);
+            if (window.ethereum) {
+                window.ethereum.on('accountsChanged', updateNavVisibility);
+            }
+            updateNavVisibility();
+        });
+    </script>
+</body>
+</html>
