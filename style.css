@@ -1,0 +1,1000 @@
+/* General Body and Typography */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fff; /* Major white background */
+    color: #333; /* Dark grey for general text */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    color: #007bff; /* Bright blue for headings */
+    text-shadow: none; /* No shadow on headings for a cleaner look */
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #666; /* Slightly lighter grey for paragraphs */
+}
+
+a {
+    color: #007bff; /* Consistent blue for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Header */
+.main-header {
+    background-color: transparent; /* Transparent header */
+    padding: 1.5rem 2rem; /* Increased padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: none; /* No border */
+    box-shadow: none; /* No shadow */
+    position: absolute; /* Position absolute to overlay banner */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: none; /* No shadow on logo */
+    color: #007bff; /* Blue logo text */
+}
+
+.logo .g-text { color: #007bff; }
+.logo .p-text { color: #333; }
+.logo .a-text { color: #007bff; }
+.logo .y-text { color: #333; }
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: #333; /* Dark grey links */
+    font-size: 1.1rem; /* Increased font size for menu text */
+    font-weight: bold; /* Make menu text bold */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a i {
+    margin-right: 0.5rem;
+}
+
+.nav-links a:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    color: #007bff;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.user-profile i {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    color: #007bff;
+}
+
+/* Hero Section (from index.html, keeping for context) */
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../imgs/hero.png');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    border-bottom: none;
+    box-shadow: none;
+    padding-bottom: 8%;
+}
+
+.slide-content {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+.slide-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: darkred;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.slide-title {
+    font-size: 3.5rem;
+    color: black;
+    text-shadow: none;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Sections General */
+.section {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: #fff; /* Default white */
+    border-bottom: 1px solid #eee;
+}
+
+.section:last-of-type {
+    border-bottom: none;
+}
+
+.section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+.accent-dot {
+    color: #007bff;
+}
+
+
+/* Status & Actions Section (from index.html) */
+.status-actions-section {
+    background-color: #f8f8f8;
+    padding: 3rem 2rem;
+    border-bottom: 2px solid #007bff;
+}
+
+.status-actions-section .section-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Card General */
+.card {
+    background-color: #fff; /* Card background remains white for general cards */
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    border-color: #007bff;
+}
+
+/* --- MetaMask Status Card Specific Styling --- */
+#metamask-status {
+    /* Gradient Background as per ref image */
+    background: linear-gradient(to right, #6a5acd, #ff69b4); /* Blue-purple to Pink */
+    color: #fff; /* White text for contrast */
+    border: none; /* No border for seamless gradient */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    padding: 2.5rem 2rem; /* Slightly more padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#metamask-status i {
+    font-size: 3rem; /* Larger icon */
+    color: #fff; /* White icon */
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Subtle glow */
+}
+
+#status-text {
+    font-weight: bold;
+    color: #fff; /* Changed status text to white */
+    font-size: 1.1rem;
+}
+
+#account-address {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white for address */
+    word-break: break-all; /* Allow breaking long addresses */
+}
+
+/* Main Button */
+.main-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 1.2rem 2.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.main-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Feature Section (from index.html) */
+.feature-section {
+    background-image: url('../imgs/bg1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #333;
+    border-top: 1px solid #eee;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.feature-item {
+    background-color: #f8f8f8;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 2.5rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
+}
+
+.feature-item img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 1.5rem;
+    filter: none;
+}
+
+.feature-item h3 {
+    color: #007bff;
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Campaign Section (from index.html) */
+.campaign-section {
+    background-image: url('../imgs/bg2.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-top: 1px solid #eee;
+}
+
+.campaign-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.campaign-member {
+    background-color: #f8f8f8;
+    border: 1.5px solid #eee;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.campaign-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
+    border-color: #007bff;
+}
+
+.campaign-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}
+
+.campaign-member h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+.campaign-member p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Join Section (from index.html) */
+.join-section {
+    background-image: url('../imgs/bg3.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #333;
+    border-top: 1px solid #eee;
+}
+
+.join-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.join-item {
+    background-color: #f8f8f8;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 2.5rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.join-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
+}
+
+.join-item i {
+    font-size: 2.8rem;
+    color: #007bff;
+    margin-bottom: 1.5rem;
+    text-shadow: none;
+}
+
+.join-item h3 {
+    color: #007bff;
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.join-item p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #666;
+    margin: 0.4rem 0;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #f2f2f2;
+    padding: 2.5rem;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    box-shadow: none;
+    color: #666;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-footer .logo {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+    display: block;
+    color: #333;
+}
+
+.logo-footer .logo .g-text { color: #007bff; }
+.logo-footer .logo .p-text { color: #333; }
+.logo-footer .logo .a-text { color: #007bff; }
+.logo-footer .logo .y-text { color: #333; }
+
+.main-footer p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Styles specifically for admin.html sections */
+.section-blue {
+    background-image: url('../imgs/bg2.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 5rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+/* This targets sections with .section-white class. It will affect any section using this. */
+/* Used for Voter Details in voter.html and Register New Voter in register_voter.html */
+.section.section-white {
+    background-image: url('../imgs/bg4.png'); /* New background image */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 5rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    color: #333; /* Ensure text is readable on this background */
+}
+
+/* Admin Actions Grid for two columns (from admin.html) */
+.admin-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+    justify-content: center;
+}
+
+.action-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    border-color: #007bff;
+}
+
+.action-card h3 {
+    color: #007bff;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.action-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.action-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+/* --- Form Styling (General for both register_voter and register_party) --- */
+
+/* Container for image and form (e.g., voter-registration-container, party-creation-container) */
+.voter-registration-container, .party-creation-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: center;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.voter-image-side, .party-image-side {
+    flex: 0 0 300px; /* Fixed width for the image side */
+    text-align: center;
+    padding-top: 2rem; /* Align image slightly down to match form top */
+}
+
+.voter-illustration, .party-illustration {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 3rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 600px;
+    margin: 0;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
+    gap: 1.5rem 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group.full-width { /* For inputs that should span both columns in a grid */
+    grid-column: 1 / -1; /* Span from first to last column line */
+}
+
+.form-card label {
+    display: block;
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-card input[type="text"],
+.form-card input[type="number"],
+.form-card input[type="email"],
+.form-card input[type="url"] { /* Added url input type */
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-card input[type="text"]:focus,
+.form-card input[type="number"]:focus,
+.form-card input[type="email"]:focus,
+.form-card input[type="url"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+.form-submit-button {
+    margin-top: 1.5rem;
+    width: auto;
+    padding: 1.2rem 3rem;
+    font-size: 1.2rem;
+}
+
+/* --- Registered Voters Table Styling Enhancements --- */
+.table-card {
+    overflow-x: auto;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    cursor: pointer; /* Indicate rows are clickable */
+}
+
+#registered-voters-table, #registered-parties-table, #election-results-table { /* Apply to all tables */
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+#registered-voters-table th, #registered-voters-table td,
+#registered-parties-table th, #registered-parties-table td,
+#election-results-table th, #election-results-table td {
+    padding: 1rem 1.2rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+#registered-voters-table thead th,
+#registered-parties-table thead th,
+#election-results-table thead th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    border-top: 1px solid #ddd;
+}
+
+#registered-voters-table tbody tr:nth-child(even),
+#registered-parties-table tbody tr:nth-child(even),
+#election-results-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#registered-voters-table tbody tr:hover,
+#registered-parties-table tbody tr:hover,
+#election-results-table tbody tr:hover {
+    background-color: #e6f7ff;
+    cursor: pointer;
+}
+
+/* Specific styling for MetaMask Address column */
+#registered-voters-table td:first-child {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px;
+}
+
+#registered-voters-table td.has-voted-yes {
+    color: #28a745;
+    font-weight: 600;
+}
+
+#registered-voters-table td.has-voted-no {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+/* --- Modal Styling (Generic for reuse in different contexts) --- */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    justify-content: center; /* Center horizontally (for flex display) */
+    align-items: center; /* Center vertically (for flex display) */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 30px;
+    border: 1px solid #888;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px; /* Default max-width for larger modals */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+    animation: fadeIn 0.3s ease-out;
+    text-align: left; /* Default text alignment */
+}
+
+.modal-content.small-modal { /* For confirmation and prompt modals */
+    max-width: 400px; /* Smaller width for these modals */
+    text-align: center; /* Center text within these modals */
+    padding: 25px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #333;
+    text-decoration: none;
+}
+
+.modal-title { /* For modal headings, centralizes them */
+    color: #007bff;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.modal-details-grid { /* For detailed info in modals (like voter details) */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.modal-details-grid p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.modal-details-grid p strong {
+    color: #007bff;
+    display: inline-block;
+    min-width: 120px;
+    margin-right: 10px;
+}
+
+/* Specific styling for address in modal */
+#modal-address {
+    word-break: break-all;
+    white-space: normal;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.modal-buttons { /* For buttons within modals */
+    display: flex;
+    justify-content: center; /* Center buttons */
+    gap: 15px; /* Space between buttons */
+    margin-top: 25px;
+}
+
+.modal-buttons .main-button { /* Apply main-button styles to modal buttons */
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    width: auto; /* Let buttons size to content */
+    box-shadow: none; /* Less prominent shadow */
+}
+
+.modal-buttons .main-button.cancel-button { /* Style for cancel buttons */
+    background-color: #6c757d; /* Grey color for cancel */
+}
+
+.modal-buttons .main-button.cancel-button:hover {
+    background-color: #5a6268;
+    box-shadow: none;
+}
+
+#promptInput { /* Styling for input field in prompt modal */
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#promptInput:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+/* --- Parties List Styling (voter.html) --- */
+.parties-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid for party cards */
+    gap: 1.5rem; /* Space between party cards */
+    margin-top: 2rem;
+    max-width: 900px; /* Limit width of the grid */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.party-card {
+    background-color: #fff; /* White background for each party card */
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Distribute space vertically */
+    height: auto; /* Allow height to adjust to content */
+}
+
+.party-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
+    border-color: #007bff;
+}
+
+.party-symbol-container {
+    width: 100px; /* Fixed size for symbol container */
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.8rem;
+    background-color: #f0f8ff; /* Light blue background for symbol area */
+    border-radius: 50%; /* Make container round */
+    border: 2px solid #007bff; /* Blue border for container */
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
+}
+
+.party-symbol {
+    max-width: 80%; /* Ensure image fits inside container */
+    max-height: 80%;
+    object-fit: contain; /* Ensure entire image is visible without cropping */
+    border-radius: 0; /* No border-radius on image itself if container is round */
+}
+
+.party-info h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+    text-transform: capitalize; /* Capitalize party name */
+}
+
+.party-info p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem; /* Space before button */
+}
+
+.vote-button {
+    width: 100%; /* Make button full width of card */
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    margin-top: auto; /* Push button to the bottom if content varies */
+}
+
+
+/* Back to Home Button (common style) */
+.back-to-home-btn {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .voter-registration-container, .party-creation-container {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .voter-image-side, .party-image-side {
+        flex: none;
+        width: 80%;
+        max-width: 300px;
+        padding-top: 0;
+    }
+
+    .form-card {
+        padding: 2rem;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        padding: 1rem;
+        position: relative;
+        background-color: #007bff;
+    }
+
+    .nav-links {
+    font-size: 0.9rem; /* Smaller font for mobile nav links */
+        margin-top: 1rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+    }
+    .nav-links a {
+        color: #fff;
+    }
+
+    .hero-section {
+        height: 70vh;
+        background-position: center center;
+        padding-bottom: 5%;
+    }
+
+    .slide-title {
+        font-size: 2.5rem;
+    }
+
+    .slide-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .status-actions-section .section-content {
+        flex-direction: column;
+    }
+
+    .main-button {
+        width: 100%;
+    }
+
+    .feature-grid, .campaign-grid, .join-grid, .admin-actions-grid, .parties-grid-container {
+        grid-template-columns: 1fr; /* Stack on small screens */
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Table adjustments for small screens */
+    #registered-voters-table, #registered-parties-table, #election-results-table {
+        font-size: 0.85rem;
+    }
+
+    #registered-voters-table th, #registered-voters-table td,
+    #registered-parties-table th, #registered-parties-table td,
+    #election-results-table th, #election-results-table td {
+        padding: 0.8rem 1rem;
+    }
+
+    /* Modal adjustments for small screens */
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+    }
+    .modal-details-grid p strong {
+        min-width: 90px;
+    }
+    .modal-content.small-modal {
+        padding: 15px;
+    }
+    .modal-buttons {
+        flex-direction: column; /* Stack buttons on small screens */
+    }
+    .modal-buttons .main-button {
+        width: 100%; /* Full width buttons */
+    }
+}
